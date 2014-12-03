@@ -1,14 +1,14 @@
 package curl
 
 import com.thoughtworks.go.plugin.api.annotation.Extension
-import com.thoughtworks.go.plugin.api.response.validation.{ValidationError, ValidationResult}
-import com.thoughtworks.go.plugin.api.task.{Task, TaskConfig, TaskView}
+import com.thoughtworks.go.plugin.api.response.validation.{ ValidationError, ValidationResult }
+import com.thoughtworks.go.plugin.api.task.{ Task, TaskConfig, TaskView }
 
 @Extension
 class CurlTask extends Task {
 
   import CurlTask._
-  
+
   override def config(): TaskConfig = {
     val config = new TaskConfig()
     config.addProperty(URL_PROPERTY)

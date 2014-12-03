@@ -16,3 +16,7 @@ artifactName := { (sv: ScalaVersion, module: ModuleID, artifact: Artifact) =>
 assemblyJarName in assembly := name.value + ".jar"
 
 libraryDependencies += "com.thoughtworks.go" %  "go-plugin-api" % "current"  % "provided" from "http://www.thoughtworks.com/products/docs/go/current/help/resources/go-plugin-api-current.jar"
+
+resolvers += "Sonatype OSS Releases" at "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+
+scalariformSettings
