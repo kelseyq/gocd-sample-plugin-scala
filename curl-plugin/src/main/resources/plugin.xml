@@ -15,10 +15,10 @@
  * limitations under the License.
  *************************GO-LICENSE-END******************************* -->
 
-<go-plugin id="curl.task.plugin.scala" version="1">
+<go-plugin id="curl.task.plugin.scala" version="2">
     <about>
         <name>Curl Task Plugin (SBT, Scala)</name>
-        <version>1.0</version>
+        <version>2.0</version>
         <target-go-version>14.1.0</target-go-version>
         <description>
            Task plugin that supports configuration and execution of curl tasks in Go
